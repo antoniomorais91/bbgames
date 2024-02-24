@@ -7,19 +7,8 @@ import { navOptions } from "@/utils";
 import ModeToggle from "../ui/modetoggle";
 import { Input } from "@/components/ui/input";
 
-interface NavbarProps {
-  onSearch: (category: string) => void;
-}
-
-export default function Navbar(props: NavbarProps) {
+export default function Navbar() {
   const [state, setState] = useState(false);
-
-  const [category, setCategory] = useState("");
-
-  const handleSearch = () => {
-    props.onSearch(category);
-  };
-
   return (
     <nav className="z-50 bg-white w-full border-b md:border-0 dark:bg-background">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8 transition">
@@ -59,10 +48,8 @@ export default function Navbar(props: NavbarProps) {
                 type="text"
                 placeholder="Digite a categoria"
                 className="mr-2"
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
               />
-              <button className="duration-200 md:hover:ease-in-out md:hover:scale-110 hover:text-[#422BD9] focus:text-[#7A36D9] disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90 cursor-pointer dark:text-[#F2A172] dark:hover:text-[#BF3B3B]" onClick={handleSearch}>Buscar</button>
+              <button className="duration-200 md:hover:ease-in-out md:hover:scale-110 hover:text-[#422BD9] focus:text-[#7A36D9] disabled:text-black/30 motion-reduce:transition-none lg:px-2 [&.active]:text-black/90 cursor-pointer dark:text-[#F2A172] dark:hover:text-[#BF3B3B]">Buscar</button>
         </li>
           </ul>
         </div>

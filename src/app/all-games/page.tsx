@@ -50,7 +50,7 @@ export default function AllGames() {
     <section className="relative flex flex-col justify-center items-center min-h-screen overflow-hidden">
       <div className="w-full my-2 p-6 m-auto bg-white rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-7xl dark:bg-background">
         <h1 className="text-3xl font-semibold text-center text-gray-700 dark:text-white">
-          {loading ? "Processando" : "Todos os Jogos"}
+        {loading ? "Processando" : "Todos os Jogos"}
         </h1>
         <article>
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
