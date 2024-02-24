@@ -9,53 +9,48 @@ export const navOptions = [
     label: "Todos os Jogos",
     path: "/all-games",
   },
-  {
-    id: "manageGames",
-    label: "Gerenciar Jogos",
-    path: "/",
-  },
 ];
 
 export const categoryOptions = [
   {
     id: "strategy",
     label: "Strategy",
-    path: "/",
+    path: "/strategy",
   },
   {
     id: "shooter",
     label: "Shooter",
-    path: "/",
+    path: "/shooter",
   },
   {
     id: "puzzle",
     label: "Puzzle",
-    path: "/",
+    path: "/puzzle",
   },
   {
     id: "arcade",
     label: "Arcade",
-    path: "/",
+    path: "/arcade",
   },
   {
     id: "rpg",
     label: "Role Playing Game (RPG)",
-    path: "/",
+    path: "/rpg",
   },
   {
     id: "sports",
     label: "Sports",
-    path: "/",
+    path: "/sports",
   },
   {
     id: "action",
     label: "Action",
-    path: "/",
+    path: "/action",
   },
   {
     id: "adventure",
     label: "Adventure",
-    path: "/",
+    path: "/adventure",
   },
 ];
 

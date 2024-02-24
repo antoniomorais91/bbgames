@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${roboto.className} bg-cover bg-no-repeat bg-[url(/bg.webp)]`}>
+      <body className={`${roboto.className} bg-auto bg-no-repeat bg-[url(/bg.webp)]`}>
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -30,6 +31,7 @@ export default function RootLayout({
           >
       <Navbar />
         {children}
+        <Footer />
         </ThemeProvider></body>
     </html>
   );

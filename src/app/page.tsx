@@ -1,9 +1,9 @@
-import Image from "next/image";
+import AllGames from "./all-games/page";
 
 export default function Home() {
   return (
     <>
-    <p>Oi</p>
+    <AllGames />
     </>
   );
 }
