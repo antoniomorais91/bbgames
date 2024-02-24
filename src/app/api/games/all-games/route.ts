@@ -2,7 +2,11 @@ import { NextApiRequest, NextApiResponse } from "next";
 import axios from "axios";
 import { NextResponse } from "next/server";
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+type ResponseData = {
+  message: string;
+};
+
+export async function GET(request: Request, res: NextApiResponse<ResponseData>) {
   const options = {
     method: "GET",
     url: "https://free-to-play-games-database.p.rapidapi.com/api/games",

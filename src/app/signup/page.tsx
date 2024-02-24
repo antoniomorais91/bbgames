@@ -26,6 +26,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+
+
 export default function SignupPage() {
   const initialFormData = {
     name: "",
@@ -43,7 +45,7 @@ export default function SignupPage() {
     try {
       const response = await axios.post("/api/users/signup", user);
       router.push("/login");
-    } catch (error) {
+    } catch (error:any) {
       console.log("Falha no cadastro...", error.message);
     }
   };
